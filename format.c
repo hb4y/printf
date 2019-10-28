@@ -1,4 +1,0 @@
-/*
- *All formats goes here.
- *
- */
