@@ -5,19 +5,7 @@
  * @valist: valist that have the argument to print
  * Return: void (just prints)
  **/
-void p_char(char * format)
+void p_char(va_list valist)
 {
-	int i;
-
-	op_t ops[] = {
-		{"c", p_char}/*,
-		{"s", p_string},
-		{"i", p_int},
-		{"d", p_d_int},*/
-		{NULL, NULL}
-	};
-
-	i = 1;
-	
-	for (; format[i]  )
+	_putchar(va_arg(valist, int));
 }

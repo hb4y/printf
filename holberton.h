@@ -1,5 +1,6 @@
 #ifndef _HOLBERTON_H_
 #define _HOLBERTON_H_
+#include <stdlib.h>
 #include <stdarg.h>
 
 /**
@@ -15,6 +16,8 @@ typedef struct op
 } op_t;
 
 int _putchar(char c);
+void p_char(va_list valist);
+
 int _printf(const char *format, ...);
 
 #endif /* _HOLBERTON_H_*/
