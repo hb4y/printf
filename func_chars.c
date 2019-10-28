@@ -7,7 +7,7 @@
  **/
 int p_char(va_list valist)
 {
-	_putchar(va_arg(valist, int));	
+	_putchar(va_arg(valist, int));
 	return (1);
 }
 /**
@@ -25,7 +25,7 @@ int p_string(va_list valist)
 
 	if (!s)
 		s = "(null)";
-	
+
 	for (i = 0; s[i] != '\0'; i++)
 		_putchar(s[i]);
 
