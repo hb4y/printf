@@ -2,7 +2,8 @@
 #define _HOLBERTON_H_
 #include <stdlib.h>
 #include <stdarg.h>
-
+/* BORRAAAAR*/
+#include <stdio.h>
 /**
  * struct op - Struct op
  * @op: The operator
@@ -12,11 +13,12 @@
 typedef struct op
 {
 	char *op;
-	void (*f)(va_list);
+	int (*f)(va_list);
 } op_t;
 
 int _putchar(char c);
-void p_char(va_list valist);
+int p_char(va_list valist);
+int p_string(va_list valist);
 
 int _printf(const char *format, ...);
 

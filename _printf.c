@@ -15,13 +15,21 @@ int _printf(const char *format, ...)
 
 	va_start(valist, format);
 
-	for (; *format != '\0'; format++, i++)
+	for (; *format != '\0'; format++)
 	{
 		if (*format != '%')
+		{
 			_putchar(*format);
-		valid_args(format);
+			i++;
+		}
+		else
+		{
+			format++;
+			i += valid_args(&format, valist);
+		}
 	}
 
-	/*_putchar(i + 48);*/
+	va_end(valist);
+
 	return (i);
 }
