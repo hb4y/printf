@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <limits.h>
 
-void tusBasicTester()
+int main(void)
 {
 // NULL
 printf(NULL);
@@ -15,8 +15,8 @@ int alen, elen;
 printf("=====================\n");
 printf("*****CHAR*****\n");
 printf("=====================\n");
-printf("Expected   : %c\n", 'a');
-_printf("Actual     : %c\n", 'a');
+printf("Expected   : %cAAA\n", 'a');
+_printf("Actual     : %cAAA\n", 'a');
 elen = printf("Expected   : %c\n", c);
 alen = _printf("Actual     : %c\n", c);
 printf("Expected   : %i\n", elen);
@@ -29,7 +29,7 @@ printf("Expected   : %c\n", '\0');
 _printf("Actual     : %c\n", '\0');
 printf("Expected   : %%%c\n", 'y');
 _printf("Actual     : %%%c\n", 'y');
-/*
+
 //strings
 printf("=====================\n");
 printf("*****STRINGS*****\n");
@@ -68,7 +68,7 @@ printf("\n");
 printf("Actual     :");
 _printf("%");
 printf("\n");
-
+/*
 //i
 printf("=====================\n");
 printf("*****INTEGER*****\n");
@@ -153,4 +153,6 @@ printf("=====================\n");
 printf("Expected   : %u, %i, %c, %d, %s\n", INT_MIN, 324, 'g', 32, "hello");
 _printf("Expected   : %u, %i, %c, %d, %s\n", INT_MIN, 324, 'g', 32, "hello");
 */
+
+return (0);
 }
