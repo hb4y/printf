@@ -2,8 +2,7 @@
 #define _HOLBERTON_H_
 #include <stdlib.h>
 #include <stdarg.h>
-/* BORRAAAAR*/
-#include <stdio.h>
+
 /**
  * struct op - Struct op
  * @op: The operator
