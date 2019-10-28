@@ -6,11 +6,10 @@
  * @valist: argument list
  * Return: void
  **/
-int valid_args(char **format, va_list valist)
+int valid_args(const char **format, va_list valist)
 {
 	int i, printed;
 
-	printed = 0;
 	op_t ops[] = {
 		{"c", p_char},
 		{"s", p_string},
@@ -20,6 +19,7 @@ int valid_args(char **format, va_list valist)
  */
 		{NULL, NULL}
 	};
+	printed = 0;
 
 	for (i = 0; *(ops[i].f) != NULL; i++)
 	{
