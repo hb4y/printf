@@ -32,7 +32,15 @@ int valid_args(const char **format, va_list valist)
 		else if (*format[0] == *(ops[i].op))
 		{
 			printed += ops[i].f(valist);
+			break;
 		}
+	}
+
+	if (*(ops[i].f) == NULL)
+	{
+		_putchar('%');
+		_putchar(*format[0]);
+		printed += 2;
 	}
 	return (printed);
 }
