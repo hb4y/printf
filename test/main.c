@@ -99,6 +99,22 @@ printf("Expected   : %i\n", INT_MAX);
 _printf("Actual     : %i\n", INT_MAX);
 printf("Expected   : %i\n", INT_MIN);
 _printf("Actual     : %i\n", INT_MIN);
+//b
+//b
+printf("=====================\n");
+printf("*****BINARY*****\n");
+printf("=====================\n");
+int b = 4312;
+alen = elen = 0;
+printf("Expected   : %i\n", 1111011);
+_printf("Actual     : %b\n", 123);
+elen = printf("Expected   : %lu\n", 1000011011000);
+alen = _printf("Actual     : %b\n", b);
+printf("Expected   : %i\n", elen);
+_printf("Actual     : %i\n", alen);
+printf("Expected   : %i\n", 0);
+_printf("Actual     : %b\n", 0);
+
 
 //d
 printf("=====================\n");

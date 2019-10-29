@@ -20,6 +20,7 @@ int p_char(va_list valist);
 int p_string(va_list valist);
 int p_int(va_list valist);
 int p_d_int(va_list valist);
+int p_bin(va_list valist);
 int valid_args(const char **format, va_list valist);
 
 int _printf(const char *format, ...);

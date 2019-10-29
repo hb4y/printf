@@ -15,6 +15,7 @@ int valid_args(const char **format, va_list valist)
 		{"s", p_string},
 		{"i", p_int},
 		{"d", p_d_int},
+		{"b", p_bin},
 		{NULL, NULL}
 	};
 	printed = 0;
