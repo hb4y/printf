@@ -1,0 +1,66 @@
+.TH man 2 "28 Oct 2019" "0.32" "_printf man page"
+.SH NAME
+.B _printf
+- print data.
+.SH SYNOPSIS
+.sp
+.B int _printf(const char *
+.I format
+.B , ...);
+.SH DESCRIPTION
+_printf is an emulation of printf.
+.sp
+As an emulation of the printf function it produce an output according to a
+.I format
+.sp
+This was done as an exercise for Holberton School
+.sp
+.B Return:
+.sp
+The number of characters printed (excluding the null byte used to end output to strings)
+.sp
+.B Output:
+.sp
+The _printf write output to stdout, the standard output stream.
+.sp
+.B Format:
+.sp
+The function can receive as argument a string of characters. This can be
+done by writing them in double quotes "". For example: Using the function in the following
+way _printf("Holberton"); will give the following output: Holberton
+.SH OPTIONS
+.sp
+The _printf besides receiving a string of charaters it can also receive what we call 
+.I conversion specifiers.
+In this case, insted of receive a string of chars, the argument will receive the % char followed
+by a conversion specifier that is a single character (It has to be inside double quotes "%specifier"). Depending on the type it will print the corresponding output.
+.sp
+.PP
+After the % followed by the specifier, a comma (,) will separate it from the next argument that must be avariable that has the same type of the char specifier.
+.sp
+.B Example
+.sp
+To invoke the function passing specifiers to it:
+.sp
+_printf("%specifier", variable of type specifier);
+
+.sp
+.B Types of Conversion Specifiers
+.sp
+%c Prints a
+.I single character.
+.sp
+%s Prints an
+.I entire string
+.sp
+%d Prints an
+.I integer.
+.sp
+%i Prints an
+.I integer.
+.SH SEE ALSO
+. For more information check out man printf(3)
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Hugo Bayona and Jorge Chaux, Cohort 10, Holberton school.
