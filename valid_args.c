@@ -13,10 +13,8 @@ int valid_args(const char **format, va_list valist)
 	op_t ops[] = {
 		{"c", p_char},
 		{"s", p_string},
-/*
- *		{"i", p_int},
- *		{"d", p_d_int},
- */
+		{"i", p_int},
+		{"d", p_d_int},
 		{NULL, NULL}
 	};
 	printed = 0;

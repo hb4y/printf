@@ -20,11 +20,11 @@ _printf("Actual     : %cAAA\n", 'a');
 elen = printf("Expected   : %c\n", c);
 alen = _printf("Actual     : %c\n", c);
 printf("Expected   : %i\n", elen);
-printf("Actual     : %i\n", alen);
+_printf("Actual     : %i\n", alen);
 elen = printf(NULL);
 alen = _printf(NULL);
 printf("Expected   : %i\n", elen);
-printf("Actual     : %i\n", alen);
+_printf("Actual     : %i\n", alen);
 printf("Expected   : %cc\n", 'a');
 _printf("Actual     : %cc\n", 'a');
 printf("Expected   : %yd\n");
@@ -51,7 +51,7 @@ alen = _printf("Actual     : %s\n", str);
 printf("Expected   : %s$\n", NULL);
 _printf("Actual     : %s$\n", NULL);
 printf("Expected   : %i\n", elen);
-printf("Actual     : %i\n", alen);
+_printf("Actual     : %i\n", alen);
 printf("Expected   : %sschool\n", "holberton");
 _printf("Actual     : %sschool\n", "holberton");
 
@@ -63,18 +63,18 @@ printf("=====================\n");
 elen = printf("Expected   : %%\n");
 alen = _printf("Actual     : %%\n");
 printf("Expected   : %i\n", alen);
-printf("Actual     : %i\n", elen);
+_printf("Actual     : %i\n", elen);
 elen = printf("Expected   : %%%%\n");
 alen = _printf("Actual     : %%%%\n");
 printf("Expected   : %i\n", elen);
-printf("Actual     : %i\n", alen);
+_printf("Actual     : %i\n", alen);
 printf("Expected   :");
 printf("%");
 printf("\n");
 printf("Actual     :");
 _printf("%");
 printf("\n");
-/*
+
 //i
 printf("=====================\n");
 printf("*****INTEGER*****\n");
@@ -124,7 +124,7 @@ printf("Expected   : %d\n", INT_MAX);
 _printf("Actual     : %d\n", INT_MAX);
 printf("Expected   : %d\n", INT_MIN);
 _printf("Actual     : %d\n", INT_MIN);
-
+/*
 //u
 printf("=====================\n");
 printf("*****UNSIGNED*****\n");
