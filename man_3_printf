@@ -1,4 +1,4 @@
-.TH man 2 "28 Oct 2019" "0.32" "_printf man page"
+.TH man 3 "28 Oct 2019" "0.1" "_printf man page"
 .SH NAME
 .B _printf
 - print data.
@@ -68,8 +68,9 @@ _printf("%specifier", variable of type specifier);
 %x, %X Prints an
 .I hexadecimal integer.
 .SH SEE ALSO
-. For more information check out man printf(3)
+.sp
+For more information check out man printf(3)
 .SH BUGS
-No known bugs.
+This function does not handle flags nor precision.
 .SH AUTHOR
 Hugo Bayona and Jorge Chaux, Cohort 10, Holberton school.
