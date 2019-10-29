@@ -22,8 +22,8 @@ int int_to_bin(unsigned int n)
 }
 
 /**
- * p_int - print the int.
- * Description: handle printing integer
+ * p_bin - print the int.
+ * Description: handle printing binary
  * @valist: valist that have the argument to print
  * Return: len of digits
  */
