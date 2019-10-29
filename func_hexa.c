@@ -14,14 +14,14 @@ int int_to_may_hex(unsigned int n)
 	{
 		count += int_to_may_hex((n / 16));
 
-		if ((n % 16) >= 0 && (n % 16) <= 9)
+		if ((n % 16) <= 9)
 			_putchar((n % 16) + 48);
 		else
 			_putchar((n % 16) + 48 + 7);
 	}
 	else
 	{
-		if ((n % 16) >= 0 && (n % 16) <= 9)
+		if ((n % 16) <= 9)
 			_putchar((n % 16) + 48);
 		else
 			_putchar((n % 16) + 48 + 7);
@@ -44,14 +44,14 @@ int int_to_min_hex(unsigned int n)
 	{
 		count += int_to_min_hex((n / 16));
 
-		if ((n % 16) >= 0 && (n % 16) <= 9)
+		if ((n % 16) <= 9)
 			_putchar((n % 16) + 48);
 		else
 			_putchar((n % 16) + 48 + 39);
 	}
 	else
 	{
-		if ((n % 16) >= 0 && (n % 16) <= 9)
+		if ((n % 16) <= 9)
 			_putchar((n % 16) + 48);
 		else
 			_putchar((n % 16) + 48 + 39);

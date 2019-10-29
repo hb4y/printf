@@ -140,7 +140,7 @@ printf("Expected   : %d\n", INT_MAX);
 _printf("Actual     : %d\n", INT_MAX);
 printf("Expected   : %d\n", INT_MIN);
 _printf("Actual     : %d\n", INT_MIN);
-/*
+
 //u
 printf("=====================\n");
 printf("*****UNSIGNED*****\n");
@@ -174,7 +174,174 @@ printf("=====================\n");
 //combos
 printf("Expected   : %u, %i, %c, %d, %s\n", INT_MIN, 324, 'g', 32, "hello");
 _printf("Expected   : %u, %i, %c, %d, %s\n", INT_MIN, 324, 'g', 32, "hello");
-*/
+
+//b
+printf("=====================\n");
+printf("*****BINARY*****\n");
+printf("=====================\n");
+b = 4312;
+
+printf("Expected   : %i\n", 1111011);
+_printf("Actual     : %b\n", 123);
+elen = printf("Expected   : %lu\n", 1000011011000);
+alen = _printf("Actual     : %b\n", b);
+printf("Expected   : %i\n", elen);
+_printf("Actual     : %i\n", alen);
+printf("Expected   : %i\n", 0);
+_printf("Actual     : %b\n", 0);
+//x
+int h = 32425;
+printf("=====================\n");
+printf("*****HEXA*****\n");    
+printf("=====================\n");
+printf("Expected   : %x\n", 995);
+_printf("Actual     : %x\n", 995);
+alen = printf("Expected   : %x\n", -1);
+elen = _printf("Actual     : %x\n", -1);
+printf("Expected   : %i\n", alen);
+_printf("Actual     : %i\n", elen);
+alen = printf("Expected   : %x\n", 0);
+elen = _printf("Actual     : %x\n", 0);
+printf("Expected   : %x\n", alen);
+_printf("Actual     : %x\n", elen);
+printf("Expected   : %x\n", 1);
+_printf("Actual     : %x\n", 1);
+elen = printf("Expected   : %x\n", h);
+alen = _printf("Actual     : %x\n", h);
+printf("Expected   : %i\n", elen);
+_printf("Actual     : %i\n", alen);
+printf("Expected   : %x\n", INT_MAX);
+_printf("Actual     : %x\n", INT_MAX);
+printf("Expected   : %x\n", INT_MIN);
+_printf("Actual     : %x\n", INT_MIN);
+printf("Expected   : %x\n", 0);
+_printf("Actual     : %x\n", 0);
+//X
+h = 224211;
+printf("=====================\n");
+printf("*****HEXA_BIG*****\n");
+printf("=====================\n");
+printf("Expected   : %X\n", h);
+_printf("Actual     : %X\n", h);
+printf("Expected   : %X\n", -1);
+_printf("Actual     : %X\n", -1);
+elen = printf("Expected   : %X\n", 0);
+alen = _printf("Actual     : %X\n", 0);
+printf("Expected   : %i\n", elen);
+_printf("Actual     : %i\n", alen);
+printf("Expected   : %X\n", UINT_MAX);
+_printf("Actual     : %X\n", UINT_MAX);
+printf("Expected   : %X\n", INT_MIN);
+_printf("Actual     : %X\n", INT_MIN);
+alen = printf("Expected   : %X\n", 0);
+elen = _printf("Actual     : %X\n", 0);
+printf("Expected   : %X\n", alen);
+_printf("Actual     : %X\n", elen);
+    
+//o
+int o = 54352;
+printf("=====================\n");
+printf("*****OCTAL*****\n");
+printf("=====================\n");
+printf("Expected   : %o\n", 2288);
+_printf("Actual     : %o\n", 2288);
+printf("Expected   : %o\n", -991);
+_printf("Actual     : %o\n", -991);
+elen = printf("Expected   : %o\n", h);
+alen = _printf("Actual     : %o\n", h);
+printf("Expected   : %o\n", elen);
+_printf("Actual     : %o\n", alen);
+printf("Expected   : %o\n", INT_MAX);
+_printf("Actual     : %o\n", INT_MAX);
+printf("Expected   : %o\n", INT_MIN);
+_printf("Actual     : %o\n", INT_MIN);
+printf("Expected   : %o\n", 0);
+_printf("Actual     : %o\n", 0);
+
+//b
+printf("=====================\n");
+printf("*****BINARY*****\n");
+printf("=====================\n");
+b = 4312;
+
+printf("Expected   : %i\n", 1111011);
+_printf("Actual     : %b\n", 123);
+elen = printf("Expected   : %lu\n", 1000011011000);
+alen = _printf("Actual     : %b\n", b);
+printf("Expected   : %i\n", elen);
+_printf("Actual     : %i\n", alen);
+printf("Expected   : %i\n", 0);
+_printf("Actual     : %b\n", 0);
+//x    
+h = 32425;
+printf("=====================\n");
+printf("*****HEXA*****\n");    
+printf("=====================\n");
+printf("Expected   : %x\n", 995);
+_printf("Actual     : %x\n", 995);
+alen = printf("Expected   : %x\n", -1);
+elen = _printf("Actual     : %x\n", -1);
+printf("Expected   : %i\n", alen);
+_printf("Actual     : %i\n", elen);
+alen = printf("Expected   : %x\n", 0);
+elen = _printf("Actual     : %x\n", 0);
+printf("Expected   : %x\n", alen);
+_printf("Actual     : %x\n", elen);
+printf("Expected   : %x\n", 1);
+_printf("Actual     : %x\n", 1);
+elen = printf("Expected   : %x\n", h);
+alen = _printf("Actual     : %x\n", h);
+printf("Expected   : %i\n", elen);
+_printf("Actual     : %i\n", alen);
+printf("Expected   : %x\n", INT_MAX);
+_printf("Actual     : %x\n", INT_MAX);
+printf("Expected   : %x\n", INT_MIN);
+_printf("Actual     : %x\n", INT_MIN);
+printf("Expected   : %x\n", 0);
+_printf("Actual     : %x\n", 0);
+//X
+h = 224211;
+printf("=====================\n");
+printf("*****HEXA_BIG*****\n");
+printf("=====================\n");
+printf("Expected   : %X\n", h);
+_printf("Actual     : %X\n", h);
+printf("Expected   : %X\n", -1);
+_printf("Actual     : %X\n", -1);
+elen = printf("Expected   : %X\n", 0);
+alen = _printf("Actual     : %X\n", 0);
+printf("Expected   : %i\n", elen);
+_printf("Actual     : %i\n", alen);
+printf("Expected   : %X\n", UINT_MAX);
+_printf("Actual     : %X\n", UINT_MAX);
+printf("Expected   : %X\n", INT_MIN);
+_printf("Actual     : %X\n", INT_MIN);
+alen = printf("Expected   : %X\n", 0);
+elen = _printf("Actual     : %X\n", 0);
+printf("Expected   : %X\n", alen);
+_printf("Actual     : %X\n", elen);
+    
+//o
+o = 54352;
+printf("=====================\n");
+printf("*****OCTAL*****\n");
+printf("=====================\n");
+printf("Expected   : %o\n", 2288);
+_printf("Actual     : %o\n", 2288);
+printf("Expected   : %o\n", -991);
+_printf("Actual     : %o\n", -991);
+elen = printf("Expected   : %o\n", h);
+alen = _printf("Actual     : %o\n", h);
+printf("Expected   : %o\n", elen);
+_printf("Actual     : %o\n", alen);
+printf("Expected   : %o\n", INT_MAX);
+_printf("Actual     : %o\n", INT_MAX);
+printf("Expected   : %o\n", INT_MIN);
+_printf("Actual     : %o\n", INT_MIN);
+printf("Expected   : %o\n", 0);
+_printf("Actual     : %o\n", 0);
+
+
 
 return (0);
 }
