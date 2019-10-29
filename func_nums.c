@@ -67,6 +67,6 @@ int p_d_int(va_list valist)
 	tmp = va_arg(valist, int);
 
 	printed = print_number(tmp);
-
+	
 	return (printed);
 }
