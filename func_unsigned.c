@@ -36,8 +36,8 @@ int print_u_number(unsigned int n)
 }
 
 /**
- * p_int - print the int.
- * Description: handle printing integer
+ * p_uint - print the int.
+ * Description: handle printing unsigned integer
  * @valist: valist that have the argument to print
  * Return: len of digits
  **/

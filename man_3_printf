@@ -53,11 +53,20 @@ _printf("%specifier", variable of type specifier);
 %s Prints an
 .I entire string
 .sp
-%d Prints an
+%d, %i Prints an
 .I integer.
 .sp
-%i Prints an
-.I integer.
+%b Prints an integer in
+.I binary format.
+.sp
+%u Prints an
+.I unsigned integer.
+.sp
+%o Prints an
+.I octal integer.
+.sp
+%x, %X Prints an
+.I hexadecimal integer.
 .SH SEE ALSO
 . For more information check out man printf(3)
 .SH BUGS

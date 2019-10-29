@@ -27,19 +27,19 @@ int int_to_bin(unsigned int n)
  */
 int int_to_octal(unsigned int n)
 {
-        int count;
+	int count;
 
-        count = 0;
-        if ((n / 8) != 0)
-        {
-                count += int_to_octal((n / 8));
-                _putchar((n % 8) + 48);
-        }
-        else
-                _putchar((n % 8) + 48);
+	count = 0;
+	if ((n / 8) != 0)
+	{
+		count += int_to_octal((n / 8));
+		_putchar((n % 8) + 48);
+	}
+	else
+		_putchar((n % 8) + 48);
 
-        count++;
-        return (count);
+	count++;
+	return (count);
 }
 
 /**
@@ -66,11 +66,11 @@ int p_bin(va_list valist)
  */
 int p_oct(va_list valist)
 {
-        unsigned int tmp;
-        int printed;
+	unsigned int tmp;
+	int printed;
 
-        tmp = va_arg(valist, unsigned int);
+	tmp = va_arg(valist, unsigned int);
 
-        printed = int_to_octal(tmp);
-        return (printed);
+	printed = int_to_octal(tmp);
+	return (printed);
 }
